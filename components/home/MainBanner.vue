@@ -1,17 +1,30 @@
 <template>
   <div
     :style="{ backgroundImage: imageUrl, color: textColor }"
-    class="flex flex-col items-center md:flex-row gap-4 px-5 min-h-[650px] bg-cover justify-between"
+    class="flex flex-col items-center md:flex-row gap-2 px-5 min-h-[650px] bg-cover justify-between"
   >
     <div class="banner text-right">
-      <h1 style="margin-top: 45px">نهمین دوره همایش زنگ برنامه نویسی</h1>
+      <h1 style="margin-top: 45px">نهمین دوره همایش زنگ برنامه نویسی شیراز</h1>
       <h2>(بزرگترین همایش علمی دانش آموزی کشور)</h2>
       <h4>
         باکیفیت‌ترین نوع یادگیری،<br />
         همگام با تکنولوژی و هم‌نبض با آینده‌ است <br />
         و کدنویسی ادبیات تکنولوژی و بذر آینده است.
       </h4>
-      <h3>تاریخ همایش: ۱۳ مرداد لغایت ۱۹ مرداد ماه ۱۴۰۳</h3>
+      <h3>
+        آخرین مهلت ثبت نام:
+
+        <span class="relative">
+          <span class="line-through"> ۱ مرداد </span>
+          <span class="mr-3"> ۱۲ مرداد ۱۴۰۳ </span>
+        </span>
+      </h3>
+      <h3 class="-mt-8">
+        تاریخ برگزاری همایش:
+
+        <span class=""> ۱۳ الی ۱۹ مرداد ۱۴۰۳ </span>
+      </h3>
+
       <v-btn
         class="button-fill px-7 py-4 my-2 d-flex d-md-none"
         to="/register"
@@ -193,7 +206,7 @@ h4 {
   padding: 20px;
   overflow-y: scroll;
   height: 350px !important;
-  max-height: 300px;
-  min-height: 300px;
+  max-height: 350px;
+  min-height: 350px;
 }
 </style>

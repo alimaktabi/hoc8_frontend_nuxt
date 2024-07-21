@@ -89,18 +89,6 @@
             solo
             flat
             hide-details="auto"
-            :error-messages="error.attend_code"
-            :error="!!error.attend_code"
-            v-model="userData.attend_code"
-            name="code"
-            placeholder="کد معرف"
-          />
-        </v-col>
-        <v-col cols="12" md="6">
-          <v-text-field
-            solo
-            flat
-            hide-details="auto"
             :error-messages="error.discount_code"
             :error="!!error.discount_code"
             v-model="userData.discount_code"

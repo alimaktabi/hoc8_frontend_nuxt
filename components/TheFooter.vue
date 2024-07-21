@@ -2,41 +2,16 @@
   <v-footer
     class="bg-indigo-lighten-1 flex-shrink-0 text-center d-flex flex-column"
   >
-    <div
-      class="container mt-10 text-right mx-auto p-2 flex flex-wrap justify-between"
-    >
+    <div class="container mt-10 text-right mx-auto p-2 flex flex-wrap">
       <div class="w-full md:w-1/4 mb-6 md:mb-0">
         <h3 class="text-xl font-bold mb-3">ساعت کد زنی</h3>
-        <p class="text-gray-600 leading-loose pl-10 text-justify">
+        <!-- <p class="text-gray-600 leading-loose pl-10 text-justify">
           Hour of Code یا زنگ برنامه‌ نویسی یک رویداد جهانی است که توسط Code.org
           ایجاد شده است و با هدف آشنا کردن دانش‌آموزان با علم کامپیوتر و گسترش
           مشارکت در این زمینه، هرساله در هفتۀ جهانی آموزش علوم کامپیوتر برگزار
           می‌شود. شرکت‌های بزرگی مانند گوگل، فیسبوک، آمازون و مایکروسافت از این
           رویداد حمایت می‌کنند.
-        </p>
-      </div>
-      <div class="w-full md:w-1/4 mb-6 md:mb-0">
-        <h3 class="text-xl font-bold mb-3">سامانه های مرتبط</h3>
-        <div class="flex mt-10 text-center items-center gap-5">
-          <a class="no-underline" href="https://hourofcode.com/ir">
-            <img
-              class="mx-auto"
-              width="70"
-              height="70"
-              src="~/assets/images/logo.png"
-            />
-            <p>زنگ برنامه نویسی بین المللی</p>
-          </a>
-          <a class="no-underline" href="https://shirazu.ac.ir/">
-            <img class="mx-auto" src="~/assets/images/shiraz.svg" />
-            <p>دانشگاه شیراز</p>
-          </a>
-          <a class="no-underline" href="https://acm.shirazu.ac.ir/">
-            <img class="mx-auto" src="~/assets/images/acm.png" />
-            <p>انجمن ACM</p>
-          </a>
-        </div>
-        <div class="flex flex-wrap items-center gap-4 text-gray-500 mt-5"></div>
+        </p> -->
       </div>
       <div class="w-full md:w-1/4 mb-6 md:mb-0">
         <h3 class="text-xl font-bold mb-3">تماس با ما</h3>

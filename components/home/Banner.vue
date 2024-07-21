@@ -94,7 +94,7 @@ export default {
     align-items: center;
     padding: 110px;
     gap: 110px;
-    height: 684px;
+    min-height: 684px;
   }
 }
 </style>

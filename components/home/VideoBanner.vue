@@ -14,12 +14,15 @@
         </p>
       </div>
       <div class="banner-img img-fluid">
-        <div id="95697430279">
+        <video controls width="100%" height="400px">
+          <source src="/hocFFMPEG.mp4" type="video/mp4" />
+        </video>
+        <!-- <div id="95697430279">
           <script
             type="text/JavaScript"
             src="https://www.aparat.com/embed/OuG8a?data[rnddiv]=95697430279&data[responsive]=yes&recom=self"
           ></script>
-        </div>
+        </div> -->
         <!-- <div id="29586206303">
         <script type="text/JavaScript"
                 src="https://www.aparat.com/embed/EcKTh?data[rnddiv]=29586206303&data[responsive]=yes"></script>
