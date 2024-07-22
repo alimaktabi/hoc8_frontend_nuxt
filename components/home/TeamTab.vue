@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <v-container class="mt-10" style="overflow: hidden">
+    <!-- <v-container class="mt-10" style="overflow: hidden">
       <v-btn
         class="mx-5"
         :color="activeIndex === i ? 'primary' : undefined"
@@ -10,7 +10,7 @@
       >
         {{ year.label }}
       </v-btn>
-    </v-container>
+    </v-container> -->
     <v-container style="overflow: hidden">
       <ul class="nav-tabs">
         <li

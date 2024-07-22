@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="banner-img img-fluid">
-        <video controls width="100%" height="400px">
+        <video controls width="100%" class="m-h-[400px]" height="400px">
           <source src="/hocFFMPEG.mp4" type="video/mp4" />
         </video>
         <!-- <div id="95697430279">
@@ -100,7 +100,7 @@ export default {
     align-items: center;
     padding: 110px;
     gap: 110px;
-    height: 684px;
+    min-height: 684px;
   }
   .banner-inner {
     display: flex;

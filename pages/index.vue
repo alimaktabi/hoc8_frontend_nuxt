@@ -108,7 +108,7 @@
       </template>
     </VideoBanner>
 
-    <!-- <TeamTab /> -->
+    <TeamTab />
     <Statistics />
     <Questions />
   </div>
