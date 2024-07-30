@@ -309,7 +309,7 @@ export default {
             {
               groupNumber: 1,
               gender: "پسر",
-              dayOne: "۲۵ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
+              dayOne: "شنبه - صبح ۸ تا ۱۲ونیم ",
               dayTwo: "۲۶ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
               dayThree: "۲۸ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
               capacity: "۴۱ نفر",
