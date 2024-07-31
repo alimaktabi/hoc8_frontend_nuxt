@@ -332,7 +332,7 @@ export default {
               groupNumber: 2,
               gender: "دختر",
               dayOne: "۱۳ مرداد." + "شنبه - عصر ۲ تا ۶ونیم",
-              dayTwo: "۱۴ مرداد." + "سه شنبه - صبح ۸ تا ۱۲ونیم",
+              dayTwo: "۱۶ مرداد." + "سه شنبه - صبح ۸ تا ۱۲ونیم",
               capacity: "۴۰ نفر",
               dorm: false,
             },
@@ -375,14 +375,6 @@ export default {
           ],
           junior: [
             {
-              label: "گروه ۴",
-              value: "4",
-            },
-          ],
-        },
-        female: {
-          secondry: [
-            {
               label: "گروه ۱",
               value: "1",
             },
@@ -394,15 +386,23 @@ export default {
               label: "گروه ۳",
               value: "3",
             },
+          ],
+        },
+        female: {
+          secondry: [
             {
-              label: "گروه ۴",
-              value: "4",
+              label: "گروه ۲",
+              value: "2",
+            },
+            {
+              label: "گروه ۳",
+              value: "3",
             },
           ],
           junior: [
             {
-              label: "گروه ۵",
-              value: "5",
+              label: "گروه ۱",
+              value: "1",
             },
           ],
         },
