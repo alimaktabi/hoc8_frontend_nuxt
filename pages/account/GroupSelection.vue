@@ -87,23 +87,7 @@
                       </p>
                     </td>
                   </tr>
-                  <tr>
-                    <!-- 5 -->
-                    <th>
-                      <p>روز سوم</p>
-                    </th>
-                    <td>
-                      <p>
-                        <span
-                          v-for="part in item['dayThree'].split('.')"
-                          :key="part"
-                        >
-                          {{ part }}
-                          <br />
-                        </span>
-                      </p>
-                    </td>
-                  </tr>
+
                   <tr>
                     <!-- 6 -->
                     <th>
@@ -136,7 +120,8 @@
                   :value="option.value"
                   color="#004948"
                   :key="options[gender][grade].indexOf(option)"
-                ></v-radio>
+                >
+              </v-radio>
               </v-radio-group>
             </v-col>
             <v-col>
@@ -247,23 +232,6 @@
                     </td>
                   </tr>
                   <tr>
-                    <!-- 5 -->
-                    <th>
-                      <p>روز سوم</p>
-                    </th>
-                    <td>
-                      <p>
-                        <span
-                          v-for="part in item['dayThree'].split('.')"
-                          :key="part"
-                        >
-                          {{ part }}
-                          <br />
-                        </span>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
                     <!-- 6 -->
                     <th>
                       <p>ظرفیت</p>
@@ -309,128 +277,82 @@ export default {
             {
               groupNumber: 1,
               gender: "پسر",
-              dayOne: "شنبه - صبح ۸ تا ۱۲ونیم ",
-              dayTwo: "۲۶ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayThree: "۲۸ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              capacity: "۴۱ نفر",
+              dayOne: "۱۳ مرداد" + "شنبه - صبح ۸ تا ۱۲ونیم ",
+              dayTwo: "۱۴ مرداد." + "یکشنبه - صبح ۸ تا ۱۲ونیم",
+              capacity: "۲۰ نفر",
               dorm: false,
             },
             {
               groupNumber: 2,
               gender: "پسر",
-              dayOne: "۲۶ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayTwo: "۲۸ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayThree: "۲۹ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              capacity: "۴۱ نفر",
+              dayOne: "۱۳ مرداد." + "شنبه - صبح ۸ تا ۱۲ونیم",
+              dayTwo: "۱۶ مرداد." + "سه شنبه - عصر ۲ تا ۶ونیم",
+              capacity: "۲۰ نفر",
               dorm: false,
             },
             {
               groupNumber: 3,
               gender: "پسر",
-              dayOne: "۲۸ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayTwo: "۲۹ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayThree: "۳۰ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              capacity: "۴۱ نفر",
+              dayOne: "۱۵ مرداد." + "دو شنبه - عصر ۲ تا ۶ونیم",
+              dayTwo: "۱۶ مرداد." + "سه شنبه - عصر ۲ تا ۶ونیم",
+              capacity: "۲۰ نفر",
               dorm: false,
-            },
-            {
-              groupNumber: 5,
-              gender: "پسر",
-              dayOne: "۱ شهریور",
-              dayTwo: "۲ شهریور",
-              dayThree: "",
-              capacity: "۴۱ نفر",
-              dorm: true,
             },
           ],
           junior: [
             {
-              groupNumber: 4,
+              groupNumber: 1,
               gender: "پسر",
-              dayOne: "۲۹ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayTwo: "۳۰ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayThree: "۳۱ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              capacity: "۴۱ نفر",
+              dayOne: "۱۳ مرداد" + "شنبه - صبح ۸ تا ۱۲ونیم ",
+              dayTwo: "۱۴ مرداد." + "یکشنبه - صبح ۸ تا ۱۲ونیم",
+              capacity: "۲۰ نفر",
               dorm: false,
             },
             {
-              groupNumber: 5,
+              groupNumber: 2,
               gender: "پسر",
-              dayOne: "۱ شهریور",
-              dayTwo: "۲ شهریور",
-              dayThree: "",
-              capacity: "۴۱ نفر",
-              dorm: true,
+              dayOne: "۱۳ مرداد." + "شنبه - صبح ۸ تا ۱۲ونیم",
+              dayTwo: "۱۶ مرداد." + "سه شنبه - عصر ۲ تا ۶ونیم",
+              capacity: "۲۰ نفر",
+              dorm: false,
+            },
+            {
+              groupNumber: 3,
+              gender: "پسر",
+              dayOne: "۱۵ مرداد." + "دو شنبه - عصر ۲ تا ۶ونیم",
+              dayTwo: "۱۶ مرداد." + "سه شنبه - عصر ۲ تا ۶ونیم",
+              capacity: "۲۰ نفر",
+              dorm: false,
             },
           ],
         },
         female: {
           secondry: [
             {
-              groupNumber: 1,
-              gender: "دختر",
-              dayOne: "۲۵ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayTwo: "۲۶ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayThree: "۲۸ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              capacity: "۴۸ نفر",
-              dorm: false,
-            },
-            {
               groupNumber: 2,
               gender: "دختر",
-              dayOne: "۲۶ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayTwo: "۲۸ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayThree: "۲۹ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              capacity: "۴۸ نفر",
+              dayOne: "۱۳ مرداد." + "شنبه - عصر ۲ تا ۶ونیم",
+              dayTwo: "۱۴ مرداد." + "سه شنبه - صبح ۸ تا ۱۲ونیم",
+              capacity: "۴۰ نفر",
               dorm: false,
             },
             {
               groupNumber: 3,
               gender: "دختر",
-              dayOne: "۲۸ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayTwo: "۲۹ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayThree: "۳۰ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              capacity: "۴۸ نفر",
+              dayOne: "۱۵ مرداد." + "دو شنبه - صبح ۸ تا ۱۲ونیم",
+              dayTwo: "۱۶ مرداد." + "سه شنبه - صبح ۸ تا ۱۲ونیم",
+              capacity: "۴۰ نفر",
               dorm: false,
-            },
-            {
-              groupNumber: 4,
-              gender: "دختر",
-              dayOne: "۳۰ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayTwo: "۳۱ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayThree: "۱ شهریور." + "ساعت ۸ تا ۱۳:۳۰",
-
-              capacity: "۴۸ نفر",
-              dorm: false,
-            },
-            {
-              groupNumber: 6,
-              gender: "دختر",
-              dayOne: "۱ شهریور",
-              dayTwo: "۲ شهریور",
-              dayThree: "",
-              capacity: "۴۸ نفر",
-              dorm: true,
             },
           ],
           junior: [
             {
-              groupNumber: 5,
+              groupNumber: 1,
               gender: "دختر",
-              dayOne: "۲۹ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              dayTwo: "۳۰ مرداد." + "ساعت ۱۴:۳۰ تا ۱۹:۴۵",
-              dayThree: "۳۱ مرداد." + "ساعت ۸ تا ۱۳:۳۰",
-              capacity: "۴۸ نفر",
+              dayOne: "۱۳ مرداد." + "شنبه - عصر ۲ تا ۶ونیم",
+              dayTwo: "۱۴ مرداد." + "یکشنبه - عصر ۲ تا ۶ونیم",
+              capacity: "۴۰ نفر",
               dorm: false,
-            },
-            {
-              groupNumber: 6,
-              gender: "دختر",
-              dayOne: "۱ شهریور",
-              dayTwo: "۲ شهریور",
-              dayThree: "",
-              capacity: "۴۸ نفر",
-              dorm: true,
             },
           ],
         },
@@ -510,6 +432,7 @@ export default {
       return "male";
     },
     grade() {
+      console.log(this.$auth.user)
       let userGrade = this.$auth.user.grade;
       if (["دهم", "یازدهم", "دوازدهم"].includes(userGrade)) {
         return "secondry";
