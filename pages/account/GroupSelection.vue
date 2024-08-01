@@ -272,6 +272,28 @@ export default {
       isClose: false,
       choose: 0,
       items: {
+        internal: {
+          secondry: [
+            {
+              groupNumber: -1,
+              gender: "مرد/زن (آنلاین)",
+              dayOne:"۱۸ مرداد " + "پنجشنبه و چهارشنبه ۸تا ۲:۳۰",
+              dayTwo: "--",
+              capacity: "۱۰۰ نفر",
+              dorm: false,
+            },
+          ],
+          junior: [
+            {
+              groupNumber: -1,
+              gender: "مرد/زن (آنلاین)",
+              dayOne:"۱۸ مرداد " + "پنجشنبه و چهارشنبه ۸تا ۲:۳۰",
+              dayTwo: "--",
+              capacity: "۱۰۰ نفر",
+              dorm: false,
+            },          
+          ],
+        },
         male: {
           secondry: [
             {
@@ -388,6 +410,20 @@ export default {
             },
           ],
         },
+         internal: {
+            secondry: [
+              {
+                label: "گروه ۱",
+                value: "-1",
+              },
+            ],
+            junior: [
+              {
+                label: "گروه ۱",
+                value: "-1",
+              },
+            ],
+          },
         female: {
           secondry: [
             {
@@ -419,6 +455,7 @@ export default {
       }
 
       let userItems = this.items[this.gender][this.grade];
+
       for (let group in userItems) {
         if (userItems[group].groupNumber == groupNumber) {
           return [userItems[group]];
@@ -426,6 +463,9 @@ export default {
       }
     },
     gender() {
+      if (this.capacity.internal && Object.values(this.capacity.internal).some(item => !!item)) {
+        return "internal"
+      }
       if (this.$auth.user.sex === "زن") {
         return "female";
       }
